@@ -98,7 +98,7 @@ if __name__ == "__main__":
     qbit_port: int = -1
     vpn_port: int = -1
 
-    # Percorso del file forwarded_port
+    # forwarded_port file path chosen
     file_path = "/host/binded/folder/path/forwarded_port" # "forwarded_port" is the default name of Gluetun file where forwarded port information is saved
 
     # Try to read the file
