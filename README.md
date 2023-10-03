@@ -19,6 +19,8 @@ Change the qBittorrent endpoint matching your own ip/domain and update credentia
 Last step you can do is to setup a cronjob to auto execute this script in order to keep the port synced to the forwarded one.
 
 Using `crontab -e` add this to run the script hourly:
-`0 * * * * /usr/bin/python3 /your/path/port-sync.py >> /var/log/qbittorrent_port_sync.log 2>&1`
+```
+0 * * * * /usr/bin/python3 /your/path/port-sync.py >> /var/log/qbittorrent_port_sync.log 2>&1
+```
 
 PS: remember whenever you re-deploy Gluetun container you have to re assign it under network configuration mode as `container:<gluetun_service_id>` or if you use Portainer or similar, you have to re-select Gluetun container
